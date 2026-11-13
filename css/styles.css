@@ -324,17 +324,28 @@ body.menu-open .nav-cta {
 
 .intro-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.75fr);
-  gap: clamp(28px, 5vw, 80px);
+  grid-template-columns: minmax(180px, 0.72fr) minmax(0, 1.2fr) minmax(220px, 0.78fr);
+  gap: clamp(24px, 4vw, 56px);
   align-items: start;
+}
+
+.about-photo {
+  margin: 0;
+  background: #d8d2cb;
+}
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .lede {
   margin: 0;
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(1.7rem, 2.8vw, 2.5rem);
-  line-height: 1.22;
+  font-size: clamp(1.35rem, 2.2vw, 1.95rem);
+  line-height: 1.28;
   letter-spacing: -0.02em;
 }
 
@@ -348,7 +359,7 @@ body.menu-open .nav-cta {
 
 .facts div {
   display: grid;
-  grid-template-columns: 6.4rem 1fr;
+  grid-template-columns: 7.2rem 1fr;
   gap: 12px;
   padding: 13px 0;
   border-top: 1px solid var(--line);
@@ -555,6 +566,47 @@ body.menu-open .nav-cta {
 .shot:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
+}
+
+.price {
+  padding: clamp(56px, 8vw, 104px) 0;
+  background: #ece6de;
+}
+
+.price-layout .chapter-head {
+  margin-bottom: 8px;
+}
+
+.price-list {
+  margin: 12px 0 0;
+}
+
+.price-list div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px 24px;
+  align-items: baseline;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.price-list div:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.price-list dt {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  line-height: 1.25;
+}
+
+.price-list dd {
+  margin: 0;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  font-weight: 500;
 }
 
 .book {
