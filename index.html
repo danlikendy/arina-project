@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Onest:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=2">
 </head>
 <body>
   <a class="skip" href="#work">К работам</a>
@@ -186,22 +186,23 @@
           <p class="chapter-note">Работа на съёмке клипа для артиста ADEL’. Макияж главных героев, перемакияж и грим массовки.</p>
         </header>
         <div class="clip-layout">
-          <div class="clip-main">
-            <div class="clip-player">
-              <iframe src="https://www.youtube-nocookie.com/embed/hGMMX5LqpV0?rel=0" title="ADEL’ — ВЫШЕ" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="clip-actions">
-              <a class="btn btn-fill" href="https://www.youtube.com/watch?v=hGMMX5LqpV0" rel="noopener noreferrer">Посмотреть клип на YouTube</a>
-            </div>
-            <p class="clip-note">Кадры со съёмочной площадки — справа.</p>
+          <div class="clip-player" data-clip-player>
+            <button class="clip-play" type="button" data-clip-play aria-label="Включить клип ADEL’ — ВЫШЕ">
+              <img src="images/clip/poster.jpg" width="1280" height="720" alt="" loading="lazy" decoding="async">
+              <span class="clip-play-mark" aria-hidden="true"></span>
+            </button>
           </div>
-          <div class="clip-stills" data-gallery>
+          <div class="clip-actions">
+            <a class="btn btn-fill" href="https://www.youtube.com/watch?v=hGMMX5LqpV0" rel="noopener noreferrer">Посмотреть клип на YouTube</a>
+          </div>
+          <div class="scroll-strip clip-stills" data-gallery>
             <button class="shot" type="button"><img src="images/clip/01.jpg" width="1400" height="788" alt="Крупный план, образ героев" loading="lazy"></button>
             <button class="shot" type="button"><img src="images/clip/02.jpg" width="1400" height="788" alt="Сцена клипа, грим и костюм" loading="lazy"></button>
             <button class="shot" type="button"><img src="images/clip/03.jpg" width="1400" height="788" alt="SFX-грим на площадке" loading="lazy"></button>
             <button class="shot" type="button"><img src="images/clip/04.jpg" width="1400" height="788" alt="Макияж с имитацией синяков" loading="lazy"></button>
             <button class="shot" type="button"><img src="images/clip/05.jpg" width="1400" height="788" alt="Титры клипа, makeup: Arina Abramova" loading="lazy"></button>
           </div>
+          <p class="clip-note">Нажмите на постер, чтобы смотреть здесь, или откройте клип на YouTube. Кадры со съёмки — листайте ниже.</p>
         </div>
       </div>
     </section>
@@ -359,6 +360,6 @@
     </div>
   </dialog>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>
