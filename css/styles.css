@@ -610,6 +610,48 @@ body.menu-open .nav-cta {
   font-weight: 500;
 }
 
+.clip-chapter {
+  background: var(--dark);
+  color: #f4f0eb;
+  padding: clamp(56px, 8vw, 96px) 0;
+}
+
+.clip-chapter .num { color: var(--accent-hot); }
+
+.clip-chapter .chapter-head h2 { color: #f7f3ee; }
+
+.clip-chapter .chapter-note { color: #b7aea6; }
+
+.clip-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+  gap: clamp(16px, 3vw, 28px);
+  align-items: start;
+}
+
+.clip-video {
+  display: block;
+  width: 100%;
+  background: #0a0908;
+}
+
+.clip-note {
+  margin: 14px 0 0;
+  font-size: 0.9rem;
+  color: #b7aea6;
+  max-width: 36rem;
+}
+
+.clip-stills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.clip-stills .shot:first-child {
+  grid-column: 1 / -1;
+}
+
 .book {
   background: var(--dark);
   color: #f4f0eb;
@@ -864,6 +906,7 @@ body.is-viewing .work-rail { visibility: hidden; }
   .hero-grid,
   .intro-layout,
   .book-layout,
+  .clip-layout,
   .lookbook,
   .mosaic-sfx { grid-template-columns: 1fr; }
 

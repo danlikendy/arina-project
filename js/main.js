@@ -79,6 +79,7 @@ const pageLayers = [
   document.querySelector(".ticker"),
   document.querySelector(".work-rail"),
   document.querySelector("main"),
+  document.querySelector(".clip-chapter"),
   document.querySelector(".price"),
   document.querySelector(".book"),
   document.querySelector(".footer"),
