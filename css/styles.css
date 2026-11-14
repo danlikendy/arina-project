@@ -964,6 +964,13 @@ body.is-viewing .progress,
 body.is-viewing .work-rail { visibility: hidden; }
 
 @media (max-width: 800px) {
+  .hero .eyebrow {
+    color: #f7f3ee;
+    text-shadow:
+      0 0 18px rgba(14, 11, 10, 0.85),
+      0 2px 10px rgba(14, 11, 10, 0.75);
+  }
+
   .hero-grid,
   .intro-layout,
   .book-layout,
